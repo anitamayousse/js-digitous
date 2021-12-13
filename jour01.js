@@ -14,3 +14,12 @@ console.log(testlength.length);
 var food = "croissant is meh";
 food = food.replace("meh","so good");
 console.log(food);
+// 06 - Up and Down
+var basic = "This is Cool";
+var basicUp = basic.toUpperCase(); 
+var basicDown = basic.toLowerCase();
+console.log(basic, basicUp, basicDown);
+// 07 - Split
+var word = "banana";
+var letters = word.split ("");
+console.log(letters);
