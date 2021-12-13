@@ -23,3 +23,11 @@ console.log(basic, basicUp, basicDown);
 var word = "banana";
 var letters = word.split ("");
 console.log(letters);
+// 08 - Template
+var age = 28;
+var template = "I'm ___ years old";
+template = template.replace("___" , age);
+console.log (template);
+//or
+
+console.log (`I'm ${age} years old`)
