@@ -31,3 +31,8 @@ console.log (template);
 //or
 
 console.log (`I'm ${age} years old`)
+//Bonus
+var changed = "Bonjour";
+console.log(changed);
+var result = changed.replace(/\o/g,'a');
+console.log(result);
