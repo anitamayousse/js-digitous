@@ -7,7 +7,7 @@ console.log(test);
 var name ="Anita";
 console.log("Nice to meet you " + name);
 // 04 - String Length
-var testlength ="I'm very long !";
+var testlength ="I'm very young !";
 console.log(testlength.length);
 // 05 - Replace
 var food = "croissant is meh";
