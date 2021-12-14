@@ -26,7 +26,7 @@ if ( score >= limit){
     console.log("Oh nooo...");}
 //07 - Condition ll
 let password = "azerty";
-if ( password.length > 5);{
+if ( password.length > 5){
     console.log("The password is secure");}
 //08 - Condition lll
 if ((score >= limit) && (password.length > 5)){
