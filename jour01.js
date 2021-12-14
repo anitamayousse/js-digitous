@@ -1,8 +1,7 @@
 // 01 - Hello World
 console.log("Hello World!");
 // 02 - String
-var test="test";
-test ="My name is Anita";
+var test ="My name is Anita";
 console.log(test);
 // 03 - Concatenation
 var name ="Anita";
