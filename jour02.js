@@ -24,3 +24,18 @@ if ( score >= limit){
     console.log("OK good!");
 } else {
     console.log("Oh nooo...");}
+//07 - Condition ll
+let password = "azerty";
+if ( password.length > 5);{
+    console.log("The password is secure");}
+//08 - Condition lll
+if ((score >= limit) && (password.length > 5)){
+    console.log("Everything is good");
+}
+else {
+    console.log("Nothing is good");}
+if ((score >= limit) || (password.length > 5)){
+    console.log("Something is good");
+}
+else {
+    console.log("Nothing is good");}
