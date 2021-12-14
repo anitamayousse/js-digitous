@@ -48,3 +48,22 @@ if((Math.floor(Math.random()* 6) +1) === 6){
 else{
     console.log ("so close..")
 }
+//Bonus ll
+let month = "January";
+switch (month) {
+    case "January":
+        console.log("Winter");
+        break;
+    case "April":
+        console.log("Spring");
+        break;
+    case "June":
+        console.log("Summer");
+        break;
+    case "December":
+        console.log("Fall");
+        break;
+    default:
+        console.log("That's not a month...");
+}
+
