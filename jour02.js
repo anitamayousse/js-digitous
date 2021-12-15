@@ -1,22 +1,28 @@
 //01 - Number
-let integer = 102;
-let float = 13.9;
+const integer = 102;
+const float = 13.9;
 console.log(integer,float);
 //02 - Convert
-let basic = 34;
-let stringified = basic.toString();
+const basic = 34;
+const stringified = basic.toString();
 console.log(stringified);
 //03 - Round
-let rounded = Math.round(1.5);
+const rounded = Math.round(1.5);
 console.log(rounded);
 //04 - Arithmétique 
 let test = 12;
 let bis = 5;
-console.log (test + bis);
+console.log (test + bis, test - bis, test *bis, test / bis, test % bis);
 //05 - Comparaison 
 let test1 = 143;
 let bis1 = 219;
-console.log(test1 > bis1);
+console.log(
+    test1 > bis1,
+    test1 < bis1, 
+    test1 >= bis1, 
+    test1<= bis1, 
+    test1 === bis1, 
+    test1 !== bis1);
 //06 - Condition 
 let limit = 50;
 let score = 64;
@@ -42,7 +48,7 @@ else {
 
 //Bonus
 let random = Math.floor(Math.random()* 6) +1;
-if((Math.floor(Math.random()* 6) +1) === 6){
+if(random === 6){
     console.log ("Yes I win!")
 }
 else{
@@ -70,8 +76,10 @@ switch (month) {
 let roundedNumber = "3.6";
 let decimals = roundedNumber - Math.floor(roundedNumber);
 let x = roundedNumber - decimals;
-if (decimals > 0 )
+if (decimals > 0.00 )
 {
-    console.log(x+(1));
+    console.log(Math.ceil(roundedNumber));
 }
-
+else{
+    console.log(x);
+}
