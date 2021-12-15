@@ -73,7 +73,7 @@ switch (month) {
         console.log("That's not a month...");
 }
 //Bonus lll
-let roundedNumber = "3.6";
+let roundedNumber = "4.1";
 let decimals = roundedNumber - Math.floor(roundedNumber);
 let x = roundedNumber - decimals;
 if (decimals > 0.00 )
