@@ -1,8 +1,9 @@
 function addUp(num) {
-    for (let i = 0; i < num.length; i++) {
-        const res= num +1;
-        return res;
-    }
+  let sum = 0;
+  for (let i = 1; i < num + 1; i++) {
+    sum += i;
     
+  }
+  return sum;
 }
-addUp(3);
+console.log(addUp(12))
