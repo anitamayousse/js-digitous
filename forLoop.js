@@ -15,8 +15,7 @@ let total = 100;
 let limit = 1000;
   for (let i=100; i<limit; i++){
     if(i % 7 === 0 ){
-      compt=i.length;
-      console.log(compt);
+      console.log(i);
     }
 }
 /*03 - Chanceux*/
