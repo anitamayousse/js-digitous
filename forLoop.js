@@ -11,6 +11,14 @@ function SquareandSum(num) {
 
 SquareandSum([5,6,7,8,9,10])
 /*02 - Comptons*/
+let total = 100;
+let limit = 1000;
+  for (let i=100; i<limit; i++){
+    if(i % 7 === 0 ){
+      compt=i.length;
+      console.log(compt);
+    }
+}
 /*03 - Chanceux*/
 let i;
 for (let i=0; i<20; i++){
