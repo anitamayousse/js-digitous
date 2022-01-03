@@ -6,7 +6,6 @@ function SquareandSum(num) {
       sum += num[i] * num[i];
     }
     console.log(sum);
-    return sum;
   }
 
 SquareandSum([5,6,7,8,9,10])
@@ -18,6 +17,8 @@ let limit = 1000;
       console.log(i);
     }
 }
+
+
 /*03 - Chanceux*/
 let i;
 for (let i=0; i<20; i++){

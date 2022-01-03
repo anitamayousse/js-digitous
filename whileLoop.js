@@ -29,7 +29,6 @@ while (ussainBolt || tysonGay <100){
 -8
 */
 /*05 - Encore des boites
-/usr/local/bin/node ./kdjsc.js
 0
 7
 */
