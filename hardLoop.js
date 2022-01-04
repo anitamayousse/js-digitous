@@ -38,33 +38,36 @@ console.log(`The largest number in the array: ${temp}`);
 /*3- Unique*/
 
 let numbers = [];
-for (let i = 50; i< 200; i++) {
-  const element = array[index];
-while ()
+let k=0;
+for (let i = 0; i<=50; i++) {
+  var num = Math.floor(Math.random() * (150+1) + 50);
+  if(numbers.indexOf(num) === -1)numbers.push(num);
+  console.log(numbers[0]);
+  while (k>= 75 && k<= 100){
+    console.log(numbers[k]);
+  }
+  k++
+  break;
 }
+
 /*04 - Nested Loop*/
 
 const words = ["hello", "goodbye", "yes", "no", "stop", "go go go"];
-const allLetters = [];
 
 function splitWordsAddInTab() {
+
   let word = "";
-  let number0 = 0;
-  for (let i = 0; i < words.length; i++){
+  let numberO = 0;
+
+  for (let i = 0; i < words.length; i++) {
     word = words[i].split("");
-    let i = 0;
 
-    while (i<word.length){
-      allLetters.push(word[i]);
-      i++;
-    }
-
-    for (let j = 0; j < words.length; j++){
-      if (word[j] === "o"){
-        number0 += 1;
+    for (let j = 0; j < word.length; j++) {
+      if (word[j] === "o") {
+        numberO +=1;
       }
     }
   }
-  return number0;
+  return numberO;
 }
 console.log(splitWordsAddInTab());
