@@ -34,3 +34,30 @@ arr.forEach((element) => {
 });
 
 console.log(`The largest number in the array: ${temp}`);
+
+/*04 - Nested Loop*/
+
+const words = ["hello", "goodbye", "yes", "no", "stop", "go go go"];
+const allLetters = [];
+
+function splitWordsAddInTab() {
+  let word = "";
+  let number0 = 0;
+  for (let i = 0; i < words.length; i++){
+    word = words[i].split("");
+    let i = 0;
+
+    while (i<word.length){
+      allLetters.push(word[i]);
+      i++;
+    }
+
+    for (let j = 0; j < words.length; j++){
+      if (word[j] === "o"){
+        number0 += 1;
+      }
+    }
+  }
+  return number0;
+}
+console.log(splitWordsAddInTab());

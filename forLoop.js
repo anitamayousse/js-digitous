@@ -10,23 +10,24 @@ function SquareandSum(num) {
 
 SquareandSum([5,6,7,8,9,10])
 /*02 - Comptons*/
-let total = 100;
-let limit = 1000;
-  for (let i=100; i<limit; i++){
+let result =0;
+  for (let i=100; i<=1000; i++){
     if(i % 7 === 0 ){
-      console.log(i);
+      result++;
     }
 }
-
+console.log(result);
 
 /*03 - Chanceux*/
-let i;
-for (let i=0; i<20; i++){
-  val = Math.floor(Math.random()*6+1);
+let sum = 0;
+for (let i=1; i<=20; i++){
+  val = Math.floor(Math.random()*(6-1)+1);
   if(val >= 5); {
+    sum+=val;
     console.log(val);
   }
 }
+console.log(sum);
 
 /*04 - Des boites*/
 10
