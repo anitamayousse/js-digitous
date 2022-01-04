@@ -35,6 +35,13 @@ arr.forEach((element) => {
 
 console.log(`The largest number in the array: ${temp}`);
 
+/*3- Unique*/
+
+let numbers = [];
+for (let i = 50; i< 200; i++) {
+  const element = array[index];
+while ()
+}
 /*04 - Nested Loop*/
 
 const words = ["hello", "goodbye", "yes", "no", "stop", "go go go"];
