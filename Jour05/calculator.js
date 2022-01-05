@@ -1,23 +1,19 @@
-function calculate (num1, num2, [operator]) {
-    let result;
-    if ( operator == '+'){
-        result = num1 + num2;
+function calculator (op1, op2, operation) {
+    if (operation === 'sum' || operation === 'add'){
+        return op1 + op2;
     }
-    else if (operator == '-'){
-        result = num1 - num2;
+    else if (operation === 'sub'){
+        return op1 - op2;
     }
-    else if (operator == '*'){
-        result = num1 * num2;
+    else if (operation === 'mul'){
+        return op1 * op2;
     }
-    else if (operator == '/'){
-        result = num1 / num2;
+    else if (operation === 'div'){
+        return op1 / op2;
     }
-    else if (operator == '%'){
-        result = num1 % num2;
-    }
-    else {
-        return 0;
-    }
-    console.log(`${num1} ${operator} ${num2} = ${result}`);
+    return 'Error';
 }
-calculate(5,4,['*'])
+
+var result = calculator(Number(process.argv[3]), Number(process.argv[4]), process.argv[2]);
+
+console.log(result);
