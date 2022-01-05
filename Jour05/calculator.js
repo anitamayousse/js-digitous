@@ -1,19 +1,19 @@
-function calculator (op1, op2, operation) {
+function calculator (n1, n2, operation) {
     if (operation === 'sum' || operation === 'add'){
-        return op1 + op2;
+        return n1 + n2;
     }
     else if (operation === 'sub'){
-        return op1 - op2;
+        return n1 - n2;
     }
     else if (operation === 'mul'){
-        return op1 * op2;
+        return n1 * n2;
     }
     else if (operation === 'div'){
-        return op1 / op2;
+        return n1 / n2;
     }
     return 'Error';
 }
 
-var result = calculator(Number(process.argv[3]), Number(process.argv[4]), process.argv[2]);
+var result = calculator(Number(process.argv[2]), Number(process.argv[4]), process.argv[3]);
 
 console.log(result);
