@@ -23,7 +23,8 @@ var prompt = require('prompt');
     name: 'password',
     description: 'Your password',
     type: 'string',
-    pattern: /^[A-Za-z0-9\-]]\w{6,}$/,
+    // pattern: /^[A-Za-z0-9\-]]\w{6,}$/, 
+    pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/,
     message: 'le mot de passe doit contenir au moins 6 caractères, au moins une lettre et au moins un chiffre, et peut contenir des tirets',
     required: true
 
@@ -32,7 +33,7 @@ var prompt = require('prompt');
     if (err) {
       return console.log(err, "Error");
     }
-      console.log('All good !');
+      console.log("All good !");
       console.log(' Email: ' + result.email);
       console.log(' Username: ' + result.username); 
       console.log(' Password: ' + result.password); 
