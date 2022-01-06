@@ -1,8 +1,8 @@
-
 function formatDate(aaaa,mm,jj) {
-    const aaaa = aaaa.getFullYear();
-    const mm = mm.getMonth();
-    const jj = jj.getDate();
+    var d = new Date(aaaa,mm,jj),
+    aaaa = d.getFullYear(),
+    mm = d.getMonth(),
+    jj = d.getDate();
     return jj + "-" + mm + "-" + aaaa;
 }
-console.log(formatDate(aaaa,mm,jj));
+console.log(formatDate(2012,06,12));

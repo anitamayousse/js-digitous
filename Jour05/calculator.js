@@ -1,5 +1,5 @@
 function calculator (n1, n2, operation) {
-    if (operation === 'sum' || operation === 'add'){
+    if (operation === 'add'){
         return n1 + n2;
     }
     else if (operation === 'sub'){
