@@ -4,11 +4,12 @@ const mysteryNum = Math.floor(Math.random()* 100) + 1;
 
 function play () {
     prompt.get(
-    {name: "q", description: "Quel est le nombre mystére?"},
+    {name: "numUser", description: "Quel est le nombre mystére?"},
     function (err, res) {
-        if (parseInt(res.numUser) === mysteryNum) {
+        const numUser = parseInt(res.numUser);
+        if (numUser === mysteryNum) {
             console.log("Bravo");
-        } else if (res.numUser > mysteryNum) {
+        } else if (numUser > mysteryNum) {
             console.log("c'est moins");
             play();
         } else {
