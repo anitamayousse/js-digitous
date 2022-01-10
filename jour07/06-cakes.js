@@ -25,3 +25,10 @@ var cake = [
 		status: "available"
 	},
 ]
+
+const changestatus = cake.filter(function(value) {
+    if (value.flavor === 'chocolate') {
+        return value.status = "sold out !" ;
+    }
+});
+console.log(changestatus);
