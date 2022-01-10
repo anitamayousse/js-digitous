@@ -9,7 +9,7 @@ var longNames = [
 	}
 ];
 var shortNames = longNames.map(function(fullname){ 
-    return fullname
+    return (["name: " + fullname.firstName +" "+fullname.lastName])
 });
 
 console.log(shortNames);
