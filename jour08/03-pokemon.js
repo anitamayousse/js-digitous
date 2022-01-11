@@ -9,7 +9,7 @@ const axios = require("axios");
     console.log("Error!");
   })
 /* 2nd solution */
-  axios.get(" https://pokeapi.co/api/v2/pokemon/132").then(function (catchPokemon) {
+  axios.get(" https://pokeapi.co/api/v2/pokemon/40").then(function (catchPokemon) {
     console.log(`id: ${catchPokemon.data.id}, name: ${catchPokemon.data.name}`);
 })
 
