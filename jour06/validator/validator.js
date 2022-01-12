@@ -1,7 +1,7 @@
-var prompt = require('prompt');
+const prompt = require('prompt');
 
   prompt.start();
-
+function checkProfile() {
   prompt.get([{
 
     name: 'email',
@@ -38,3 +38,5 @@ var prompt = require('prompt');
       console.log(' Username: ' + result.username); 
       console.log(' Password: ' + result.password); 
   });
+}
+checkProfile()
